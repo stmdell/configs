@@ -1,8 +1,12 @@
+net option show
 
 net option set net.ipv4.tcp_rmem "4096 1048576 29360128"
-
 net option set net.ipv4.tcp_wmem "4096 1048576 29360128"
+net option set net.ipv4.tcp_rmem "4096 1048576 33554432"
+net option set net.ipv4.tcp_rmem "4096 1048576 33554432"
 
-net option set net.ipv4.tcp_rmem "4096 1048576 33554432"
-net option set net.ipv4.tcp_rmem "4096 1048576 33554432"
+net iperf server window-size 32M
+
+net iperf client window-size 32M ddve-01
+
 

@@ -2,6 +2,8 @@ net option show
 
 net option set net.ipv4.tcp_rmem "4096 1048576 33554432"
 net option set net.ipv4.tcp_rmem "4096 1048576 33554432"
+net option set net.core.wmem_max "33554432"
+net option set net.core.rmem_max "33554432"
 
 net iperf server window-size 32M
 
